@@ -21,7 +21,7 @@ jobs:
     - name: Install Flawfinder
       run: pip install flawfinder
     - name: Run Flawfinder
-      run: flawfinder --csv ./ > test.txt
+      run: flawfinder --csv ./ > results.csv
     - name: Upload Artifact
       uses: actions/upload-artifact@v4
       with:
